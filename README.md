@@ -1,4 +1,4 @@
-# EDSD 2025/2026: Course on Population Projection & Demographic Forecasting
+# EDSD 2025/2026: Course on Population Projections & Demographic Forecasting
 
 This repository contains the materials for the course on "Population Projection & Demographic Forecasting", prepared for the 2025/2026 cohort of the [European Doctoral School of Demography](https://eaps.nl/edsd). 
 
