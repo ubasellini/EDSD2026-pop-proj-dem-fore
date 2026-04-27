@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Lecture1_pre-class_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Lecture1_pre-class_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Lecture1_pre-class_files/libs/quarto-html/popper.min.js"></script>
-<script src="Lecture1_pre-class_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Lecture1_pre-class_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Lecture1_pre-class_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Lecture1_pre-class_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Lecture1_pre-class_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="Lecture1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lecture1_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Lecture1_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lecture1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Lecture1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lecture1_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Lecture1_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Lecture1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.553">
 
   <meta name="author" content="Ugofilippo Basellini">
@@ -16,8 +16,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Lecture1_pre-class_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Lecture1_pre-class_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="Lecture1_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Lecture1_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -96,12 +96,12 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="Lecture1_pre-class_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="Lecture1_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
-  <link href="Lecture1_pre-class_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Lecture1_pre-class_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Lecture1_pre-class_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Lecture1_pre-class_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="Lecture1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Lecture1_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Lecture1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Lecture1_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -424,6 +424,7 @@ Ugofilippo Basellini
 </section>
 <section id="miscellaneous" class="slide level2">
 <h2>Miscellaneous</h2>
+<div style="font-size: 92%;">
 <!-- :::{.incremental} -->
 <ul>
 <li>Course materials available on Moodle and on <a href="https://github.com/ubasellini/EDSD2026-pop-proj-dem-fore">GitHub</a></li>
@@ -432,13 +433,14 @@ Ugofilippo Basellini
 <li>On top of projecting and forecasting, we will learn how to use animations to make nice dynamic visualizations, and how to use shiny apps</li>
 <li>Course should be propaedeutic to Adrian’s Raftery course on “<em>Bayesian projection methodology</em>” in May <!-- ::: --></li>
 </ul>
+</div>
 </section>
 <section id="assignment" class="slide level2">
 <h2>Assignment</h2>
 <!-- ::: incremental -->
 <ul>
 <li>Group assignment, with three students for each group</li>
-<li>Five exercises (out of nine), which will be given after each class</li>
+<li>Five exercises (out of eight), which will be given after each class</li>
 <li>The exercises follow up on what we have touched during the class</li>
 <li>Please email me a single .pdf file containing your answers, as well as the <code>R</code> codes and data to generate the results. Ideally you can send me an <code>R</code> markdown document</li>
 <li>Deadline: Sunday 28th June <!-- - Random group allocations: let's draw them in R --> <!-- ::: --></li>
@@ -454,38 +456,48 @@ Ugofilippo Basellini
 </ul>
 <!-- ::: {.fragment .semi-fade-out fragment-index=2} -->
 <!-- - Lecture 2: Matrix Projections I -->
-<!-- - Lecture 3: Matrix Projections II  -->
-<!-- - Lecture 4: Demographic Forecasting & Lee-Carter  -->
+<!-- - Lecture 3: Matrix Projections II -->
+<!-- - Lecture 4: Demographic Forecasting & Lee-Carter -->
 <!-- ::: -->
 </section>
 <section id="pop.-projections-motivations-i" class="slide level2">
 <h2>Pop. projections: motivations I</h2>
 <div style="font-size: 90%;">
+<!-- ::: incremental -->
 <p>“<em>Population projection is probably the demographic technique that is most frequently requested by demography’s clients</em>” (Preston et al.&nbsp;2001)</p>
 <ul>
 <li>Governments: to anticipate demands for schools, roads, medical personnel, …</li>
 <li>Private businesses: potential size of their future market</li>
-<li>Public and private sector: future pension expenditures</li>
+<li>Public and private sector: future pension expenditures<br>
+
+<div style="height: 0.25em;">
+
+</div>
+<div style="text-align: center;">
+<p><span class="math inline">\(\Rightarrow\)</span> they are the <strong>base</strong> for many other projections that are essential for social and economic planning, e.g.&nbsp;labour, education, health, housing, social security, energy, climate, transport, …</p>
+</div></li>
 </ul>
-<p><span class="math inline">\(\Rightarrow\)</span> more generally, they are the <strong>base</strong> for many other projections that are essential for social and economic planning, e.g.&nbsp;labour, education, health, housing, social security, energy, climate, transport, …</p>
+<!-- ::: -->
 </div>
 </section>
 <section id="pop.-projections-motivations-ii" class="slide level2">
 <h2>Pop. projections: motivations II</h2>
 <div style="font-size: 82%;">
+<!-- ::: incremental -->
 <p>Demographers use population projections for a variety of needs:</p>
 <ul>
 <li>to analyse the implications of a certain set of demographic parameters on population size, composition and growth</li>
 <li>to help understand the determinants of population change and inform policy discussions</li>
 <li>to illustrate the implications of certain demographic characteristics (the model’s <em>inputs</em>) on population parameters over time (the model’s <em>outputs</em>)</li>
 <li>typical inputs: fertility, mortality and migration - although methodology can be extended to different demographic processes (marriage patterns, contraceptive use regimes, …)</li>
-<li>to identify realistic goals and targets for future development trends</li>
+<li>to identify realistic goals and targets for future development trends <!-- ::: --></li>
 </ul>
 </div>
 </section>
 <section id="projections-vs-forecast-i" class="slide level2">
 <h2>Projections vs forecast I</h2>
 <div style="font-size: 77%;">
+<!-- ::: incremental -->
 <p>“<em>Population projections are calculations which show the future development of a population when certain assumptions are made about the future course of fertility, mortality and migration. They are in general purely formal calculations, developing the implications of the assumptions that are made.</em>” (United Nations 1958)</p>
 <ul>
 <li>quality of projections is determined by their <em>internal</em> validity: do projections obey fundamental demographic accounting relations? </li>
@@ -497,10 +509,12 @@ Ugofilippo Basellini
 </ul></li>
 </ul>
 </div>
+<!-- ::: -->
 </section>
 <section id="projections-vs-forecasts-ii" class="slide level2">
 <h2>Projections vs forecasts II</h2>
 <div style="font-size: 88%;">
+<!-- ::: incremental -->
 <p>“<em>A population forecast is a projection in which the assumptions are considered to yield a realistic picture of the probable future development of a population</em>” (United Nations 1958)</p>
 <ul>
 <li>quality of forecasts is determined by their <em>external</em> validity: are the predictions of subsequent events accurate?<br>
@@ -513,18 +527,27 @@ Ugofilippo Basellini
 </ul></li>
 </ul>
 </div>
+<!-- ::: -->
 </section>
 <section id="projections-vs-forecasts-iii" class="slide level2">
 <h2>Projections vs forecasts III</h2>
 <div style="font-size: 93%;">
+<!-- ::: incremental -->
 <p>In Nathan Keyfitz (1972) words: “<em>Population projections are correct beyond any testing against the subsequent population performance; in fact they can be incorrect only in the trivial sense that the author made an arithmetic error that prevents his final numbers from being consistent with his initial assumptions.</em>”</p>
 <p>“<em>Yet in fact projections and forecasts are not easily distinguished. … A demographer makes a projection, and his reader uses it as a forecast.</em>”</p>
+<div style="height: 0.25em;">
+
+</div>
+<div style="text-align: center;">
 <p><span class="math inline">\(\Rightarrow\)</span> in this course we will look at both projections and forecasts</p>
+</div>
+<!-- ::: -->
 </div>
 </section>
 <section id="important-slide" class="slide level2">
 <h2>Global population projections</h2>
 <div style="font-size: 67%;">
+<!-- ::: incremental -->
 <ul>
 <li><strong>United Nations</strong> World Population Prospects (WPP) (<a href="https://population.un.org/wpp/">web-link</a>, <a href="https://population.un.org/wpp/graphs">visualization</a>)
 <ul>
@@ -544,13 +567,14 @@ Ugofilippo Basellini
 <li>based on an epidemiological approach to answer policy-oriented “what-if” questions</li>
 <li>received some criticism from demographic community (see <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)01051-5/fulltext">here</a>)</li>
 </ul></li>
-<li><strong>US Census Bureau</strong> (<a href="https://www.census.gov/programs-surveys/international-programs/about/idb.html">web-link</a>, <a href="https://www.census.gov/data-tools/demo/idb/#/dashboard?dashboard_page=country&amp;COUNTRY_YR_ANIM=2026">visualization</a>)</li>
+<li><strong>US Census Bureau</strong> (<a href="https://www.census.gov/programs-surveys/international-programs/about/idb.html">web-link</a>, <a href="https://www.census.gov/data-tools/demo/idb/#/dashboard?dashboard_page=country&amp;COUNTRY_YR_ANIM=2026">visualization</a>) <!-- ::: --></li>
 </ul>
 </div>
 </section>
 <section id="population-projection-methodology" class="slide level2">
 <h2>Population projection methodology</h2>
 <div style="font-size: 92%;">
+<!-- ::: incremental -->
 <p>A desirable methodology should:</p>
 <ul>
 <li>obey the demographic accounting relationships (balancing equation of population growth)</li>
@@ -564,10 +588,12 @@ Ugofilippo Basellini
 </ul></li>
 </ul>
 </div>
+<!-- ::: -->
 </section>
 <section id="cohort-component-method-i" class="slide level2">
 <h2>Cohort-component method I</h2>
 <div style="font-size: 76%;">
+<!-- ::: incremental -->
 <p>The cohort-component method (CCM):</p>
 <ul>
 <li>it can be traced back to Cannan (1895) and Westergaard (1908) (as reported by Smith and Keyfitz (1977) and de Gans (2003))<br>
@@ -575,24 +601,26 @@ Ugofilippo Basellini
 <li>nearly the only method used for population projections, almost universal consensus among social scientists</li>
 <li>employed by the United Nations for their WPP population estimates and projections, as well as by several statistical agencies (i.e.&nbsp;Federal Statistical Office of Germany, EUROSTAT, …)</li>
 <li>model’s intuition: segment the population into different groups exposed to specific fertility, mortality and migration “risks”, and compute the changes over time in each group</li>
-<li>typical groups: age and sex; can be extended to include race, nationality, location (regions, rural/urban), educational attainment, …</li>
+<li>typical groups: age and sex; can be extended to include race, nationality, location (regions, rural/urban), educational attainment, … <!-- ::: --></li>
 </ul>
 </div>
 </section>
 <section id="cohort-component-method-ccm-ii" class="slide level2">
 <h2>Cohort-component method (CCM) II</h2>
 <div style="font-size: 86%;">
+<!-- ::: incremental -->
 <p>Three main reasons for the success of the CCM (Burch 2003):</p>
 <ul>
 <li><em>completeness &amp; simplicity</em>: complete account of size and age-sex composition of populations, based on relatively simple mathematics</li>
 <li><em>explanation &amp; prediction</em>: given inputs of fertility, mortality and migration, the CCM provides an exhaustive account of past and future population dynamics</li>
-<li><em>guidance</em>: can be used to answer “what if” questions of population dynamics, eg. how demographic components could be used as policy levers</li>
+<li><em>guidance</em>: can be used to answer “what if” questions of population dynamics, eg. how demographic components could be used as policy levers <!-- ::: --></li>
 </ul>
 </div>
 </section>
 <section id="cohort-component-method-iii" class="slide level2">
 <h2>Cohort-component method III</h2>
 <div style="font-size: 79%;">
+<!-- ::: incremental -->
 <ul>
 <li>discrete-time model</li>
 <li>projection period divided into time intervals of the same length as the age intervals employed</li>
@@ -600,20 +628,21 @@ Ugofilippo Basellini
 <ul>
 <li>estimate the number of people still alive at the start of next interval (<strong>mortality</strong>)</li>
 <li>compute number of births, aggregate them across groups and compute how many survive to the next interval (<strong>fertility</strong> and <strong>infant mortality</strong>) </li>
-<li>add immigrants and subtract emigrants, compute births from immigrants, project number of migrants and their newborns in the next interval (<strong>migration</strong>, <strong>fertility</strong> and <strong>mortality</strong>)</li>
+<li>add immigrants and subtract emigrants, compute births from immigrants, project number of migrants and their newborns in the next interval (<strong>migration</strong>, <strong>fertility</strong> and <strong>mortality</strong>) <!-- ::: --></li>
 </ul></li>
 </ul>
 </div>
 </section>
 <section id="ccm---step-1" class="slide level2">
 <h2>CCM - step 1</h2>
+<!-- ::: incremental -->
 <p>Estimate the number still alive at the start of next interval (<strong>mortality</strong>)</p>
 <ul>
 <li>if groups are only age and sex, only need single decrement life tables by sex<br>
 </li>
 <li>use survivorship ratios to compute survivors in the next period, assigned to the next age group (because age and time intervals congruent)<br>
 </li>
-<li>if more subgroups, need to take into account transitions to different groups - multistate projections (see, e.g., Rogers 1995)</li>
+<li>if more subgroups, need to take into account transitions to different groups - multistate projections (see, e.g., Rogers 1995) <!-- ::: --></li>
 </ul>
 </section>
 <section id="closed-female-population" class="slide level2">
@@ -631,8 +660,6 @@ s^{F}_{x} &amp;= \frac{L^{F}_{x+5}}{L^{F}_x} \\
 N^{F}_x(t+5) &amp;= \, N^{F}_{x-5}(t) \, s^{F}_{x-5}
 \end{aligned}
 \qquad(1)\]</span></span></p>
-<!-- \begin{split} -->
-<!-- \end{split} -->
 </div>
 </section>
 <section id="closed-female-population-exercise" class="slide level2">
@@ -659,21 +686,19 @@ N^{F}_x(t+5) = \, N^{F}_{x-5}(t) \, s^{F}_{x-5}
 </section>
 <section id="one-possible-solution" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- ### cleaning the workspace -->
-<!-- rm(list=ls()) -->
-<!-- ## loading packages -->
-<!-- library(tidyverse) -->
-<!-- ## loading data -->
-<!-- load("data/dta.swe.1993.Rdata") -->
-<!-- ## project age groups forward  -->
-<!-- dta.swe <- as_tibble(dta.swe) %>%  -->
-<!--    mutate(sFx=lead(LFx)/LFx, -->
-<!--           NFx5=lag(NFx*sFx)) -->
-<!-- ## checking results -->
-<!-- head(dta.swe[,c(1:4,8,9)]) -->
-<!-- tail(dta.swe[,c(1:4,8,9)]) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="do">### cleaning the workspace</span></span>
+<span id="cb1-2"><a href=""></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
+<span id="cb1-3"><a href=""></a><span class="do">## loading packages</span></span>
+<span id="cb1-4"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href=""></a><span class="do">## loading data</span></span>
+<span id="cb1-6"><a href=""></a><span class="fu">load</span>(<span class="st">"data/dta.swe.1993.Rdata"</span>)</span>
+<span id="cb1-7"><a href=""></a><span class="do">## project age groups forward</span></span>
+<span id="cb1-8"><a href=""></a>dta.swe <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(dta.swe) <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href=""></a>    <span class="fu">mutate</span>(<span class="at">sFx=</span><span class="fu">lead</span>(LFx)<span class="sc">/</span>LFx,</span>
+<span id="cb1-10"><a href=""></a>           <span class="at">NFx5=</span><span class="fu">lag</span>(NFx<span class="sc">*</span>sFx))</span>
+<span id="cb1-11"><a href=""></a><span class="do">## checking results</span></span>
+<span id="cb1-12"><a href=""></a><span class="fu">head</span>(dta.swe[,<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">9</span>)])</span>
+<span id="cb1-13"><a href=""></a><span class="fu">tail</span>(dta.swe[,<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">9</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="one-possible-solution-1" class="slide level2">
 <h2>One possible solution</h2>
@@ -705,6 +730,7 @@ N^{F}_x(t+5) = \, N^{F}_{x-5}(t) \, s^{F}_{x-5}
 <section id="the-last-age-group" class="slide level2">
 <h2>The last age group</h2>
 <div style="font-size: 70%;">
+<!-- ::: incremental -->
 <p>For the open-ended age group, we should also consider the number of survivors that were already present in the group at the beginning of the interval. Hence, combining two age groups:</p>
 <p><span class="math display">\[\begin{equation}
 N^{F}_{85+}(t+5) = \left( N^{F}_{80}(t) \frac{L^{F}_{85+}}{L^{F}_{80}} \right) + \left(N^{F}_{85+}(t) \, \frac{T^{F}_{90+}}{T^{F}_{85}} \right)
@@ -715,6 +741,7 @@ N^{F}_{85+}(t+5) = \Big( N^{F}_{80}(t) + \, N^{F}_{85+}(t) \Big) \, \frac{T^{F}_
 \end{equation}\]</span></p>
 <p>We should thus adjust <span class="math inline">\(s^{F}_{80} = \frac{T^{F}_{85+}}{T^{F}_{80}} = \frac{L^{F}_{85+}}{L^{F}_{80} + L^{F}_{85+}}\)</span></p>
 </div>
+<!-- ::: -->
 </section>
 <section id="the-last-age-group-exercise" class="slide level2">
 <h2>The last age group: Exercise</h2>
@@ -741,20 +768,18 @@ N^{F}_{85+}(t+5) &amp;= \Big( N^{F}_{80}(t) + \, N^{F}_{85+}(t) \Big) \, s^{F}_{
 </section>
 <section id="one-possible-solution-2" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- ## print last age group  -->
-<!-- tail(dta.swe[,c(1:4,8,9)],n = 3) -->
-<!-- ## adjusting the last age group -->
-<!-- dta.swe <- dta.swe %>%  -->
-<!--    mutate(sFx=ifelse(test = Age==80, -->
-<!--                      yes  = lead(LFx)/(LFx + lead(LFx)), -->
-<!--                      no   = sFx), -->
-<!--           NFx5=ifelse(test = Age==85, -->
-<!--                       yes  = (NFx+lag(NFx))*lag(sFx), -->
-<!--                       no   = NFx5)) -->
-<!-- ## print last age group  -->
-<!-- tail(dta.swe[,c(1:4,8,9)],n = 3) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="do">## print last age group</span></span>
+<span id="cb4-2"><a href=""></a><span class="fu">tail</span>(dta.swe[,<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">9</span>)],<span class="at">n =</span> <span class="dv">3</span>)</span>
+<span id="cb4-3"><a href=""></a><span class="do">## adjusting the last age group</span></span>
+<span id="cb4-4"><a href=""></a>dta.swe <span class="ot">&lt;-</span> dta.swe <span class="sc">%&gt;%</span></span>
+<span id="cb4-5"><a href=""></a>    <span class="fu">mutate</span>(<span class="at">sFx=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age<span class="sc">==</span><span class="dv">80</span>,</span>
+<span id="cb4-6"><a href=""></a>                      <span class="at">yes  =</span> <span class="fu">lead</span>(LFx)<span class="sc">/</span>(LFx <span class="sc">+</span> <span class="fu">lead</span>(LFx)),</span>
+<span id="cb4-7"><a href=""></a>                      <span class="at">no   =</span> sFx),</span>
+<span id="cb4-8"><a href=""></a>           <span class="at">NFx5=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age<span class="sc">==</span><span class="dv">85</span>,</span>
+<span id="cb4-9"><a href=""></a>                       <span class="at">yes  =</span> (NFx<span class="sc">+</span><span class="fu">lag</span>(NFx))<span class="sc">*</span><span class="fu">lag</span>(sFx),</span>
+<span id="cb4-10"><a href=""></a>                       <span class="at">no   =</span> NFx5))</span>
+<span id="cb4-11"><a href=""></a><span class="do">## print last age group</span></span>
+<span id="cb4-12"><a href=""></a><span class="fu">tail</span>(dta.swe[,<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">9</span>)],<span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="one-possible-solution-3" class="slide level2">
 <h2>One possible solution</h2>
@@ -784,19 +809,23 @@ N^{F}_{85+}(t+5) &amp;= \Big( N^{F}_{80}(t) + \, N^{F}_{85+}(t) \Big) \, s^{F}_{
 <section id="ccm---step-2" class="slide level2">
 <h2>CCM - step 2</h2>
 <div style="font-size: 85%;">
+<!-- ::: incremental -->
 <p>Compute number of births, aggregate them across groups and compute how many survive to the next interval (<strong>fertility</strong> and <strong>infant mortality</strong>)</p>
 <ul>
-<li>ideally: model explicitly couple and union creation and dissolution, births are a by-product of these </li>
+<li>ideally: model explicitly couple and union creation and dissolution, births are a by-product of these<br>
+</li>
 <li>in practice: “female-dominant” approach, births produced by women only<br>
 </li>
 <li>apply fertility rates to women, disaggregate by sex using sex-ratio at birth</li>
 <li>if more subgroups, additional layer of difficulty - typically assume birth belonging to same group as mother</li>
 </ul>
 </div>
+<!-- ::: -->
 </section>
 <section id="the-first-age-group-i" class="slide level2">
 <h2>The first age group I</h2>
 <div style="font-size: 65%;">
+<!-- ::: incremental -->
 <p>Let <span class="math inline">\(F_x\)</span> denote the fertility rate at age <span class="math inline">\(x\)</span>. During the projection interval, the number of births to women aged <span class="math inline">\(x\)</span> to <span class="math inline">\(x+5\)</span> is then:</p>
 <p><span class="math display">\[
 B_x[t, t+5] = F_x \cdot 5
@@ -814,10 +843,12 @@ B[t, t+5] = \sum_{x} \frac{5}{2} \, F_x  \left( N^{F}_x(t) + N^{F}_{x-5}(t) \fra
 B^{F}[t, t+5] = \frac{1}{1+SRB} \, B[t, t+5]
 \end{equation*}\]</span></p>
 </div>
+<!-- ::: -->
 </section>
 <section id="the-first-age-group-ii" class="slide level2">
 <h2>The first age group II</h2>
 <div style="font-size: 65%;">
+<!-- ::: incremental -->
 <ul>
 <li><p>number of females in the first age group is obtained by surviving female births through time <span class="math inline">\(t+5\)</span></p></li>
 <li><p>assuming that births are distributed evenly during projection period: <span id="eq-N0F-t5"><span class="math display">\[
@@ -825,10 +856,10 @@ N_0^F (t+5) = B^{F}[t, t+5] \frac{L^{F}_0}{5 \, \ell_0}
 \qquad(2)\]</span></span> where <span class="math inline">\(\ell_0\)</span> is the life-table radix</p></li>
 <li><p>equivalently, we can rewrite <a href="#/the-first-age-group-ii" class="quarto-xref">Equation&nbsp;2</a> as: <span class="math display">\[
 N_0^F (t+5) = \sum_x N^{F}_x (t) b^{F}_x
-\]</span></p></li>
+\]</span> where <span class="math inline">\(b^{F}_x = \frac{1}{1 + SRB} \frac{L^{F}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big)\)</span></p></li>
 </ul>
-<p>where <span class="math inline">\(b^{F}_x = \frac{1}{1 + SRB} \frac{L^{F}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big)\)</span></p>
 </div>
+<!-- ::: -->
 </section>
 <section id="the-first-age-group-exercise" class="slide level2">
 <h2>The first age group: Exercise</h2>
@@ -839,12 +870,12 @@ N_0^F (t+5) = \sum_x N^{F}_x (t) b^{F}_x
 <p><strong>Exercise</strong></p>
 </div>
 <div class="callout-content">
-<p>Adjust the first age group of your projection, assuming a sex-ratio at birth (SRB) of 1.05.</p>
+<p>Adjust the first age group of your projection, assuming a sex-ratio at birth (SRB) of 1.05 and a life table radix equal to <span class="math inline">\(\ell_0\)</span>=100,000</p>
 </div>
 </div>
 </div>
 </div>
-<div style="font-size: 60%;">
+<div style="font-size: 50%;">
 <p>Two possible solutions: we can compute</p>
 <p><span class="math display">\[\begin{align*}
 b^{F}_x &amp;= \frac{1}{1 + SRB} \frac{L^{F}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big) \, ,\\
@@ -858,22 +889,20 @@ N_0^F (t+5) &amp;= \frac{1}{1+SRB} \, \frac{L^{F}_0}{5 \, \ell_0} \sum_x B_x[t, 
 </section>
 <section id="one-possible-solution-4" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- srb <- 1.05 -->
-<!-- fact.srb <- 1/(1+srb) -->
-<!-- l0 <- 1e5 -->
-<!-- LF0 <- dta.swe$LFx[dta.swe$Age==0] -->
-<!-- dta.swe <- dta.swe %>% -->
-<!--    mutate(bFx=fact.srb * LF0 / (2*l0) * (Fx + sFx*lead(Fx)), -->
-<!--            Bx=Fx*5*(NFx+NFx5)/2, -->
-<!--            NFx5=ifelse(test = Age==0, -->
-<!--                        yes  = fact.srb * LF0 / (5*l0) * sum(Bx,na.rm = T), -->
-<!--                        no   = NFx5) -->
-<!-- ) -->
-<!-- dta.swe$NFx5[1] -->
-<!-- ## compare with second formula -->
-<!-- sum(dta.swe$NFx * dta.swe$bFx,na.rm = T) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>srb <span class="ot">&lt;-</span> <span class="fl">1.05</span></span>
+<span id="cb7-2"><a href=""></a>fact.srb <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>srb)</span>
+<span id="cb7-3"><a href=""></a>l0 <span class="ot">&lt;-</span> <span class="fl">1e5</span></span>
+<span id="cb7-4"><a href=""></a>LF0 <span class="ot">&lt;-</span> dta.swe<span class="sc">$</span>LFx[dta.swe<span class="sc">$</span>Age<span class="sc">==</span><span class="dv">0</span>]</span>
+<span id="cb7-5"><a href=""></a>dta.swe <span class="ot">&lt;-</span> dta.swe <span class="sc">%&gt;%</span></span>
+<span id="cb7-6"><a href=""></a>    <span class="fu">mutate</span>(<span class="at">bFx=</span>fact.srb <span class="sc">*</span> LF0 <span class="sc">/</span> (<span class="dv">2</span><span class="sc">*</span>l0) <span class="sc">*</span> (Fx <span class="sc">+</span> sFx<span class="sc">*</span><span class="fu">lead</span>(Fx)),</span>
+<span id="cb7-7"><a href=""></a>           <span class="at">Bx=</span>Fx<span class="sc">*</span><span class="dv">5</span><span class="sc">*</span>(NFx<span class="sc">+</span>NFx5)<span class="sc">/</span><span class="dv">2</span>,</span>
+<span id="cb7-8"><a href=""></a>           <span class="at">NFx5=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age<span class="sc">==</span><span class="dv">0</span>,</span>
+<span id="cb7-9"><a href=""></a>                       <span class="at">yes  =</span> fact.srb <span class="sc">*</span> LF0 <span class="sc">/</span> (<span class="dv">5</span><span class="sc">*</span>l0) <span class="sc">*</span> <span class="fu">sum</span>(Bx,<span class="at">na.rm =</span> T),</span>
+<span id="cb7-10"><a href=""></a>                       <span class="at">no   =</span> NFx5)</span>
+<span id="cb7-11"><a href=""></a>)</span>
+<span id="cb7-12"><a href=""></a>dta.swe<span class="sc">$</span>NFx5[<span class="dv">1</span>]</span>
+<span id="cb7-13"><a href=""></a><span class="do">## compare with second formula</span></span>
+<span id="cb7-14"><a href=""></a><span class="fu">sum</span>(dta.swe<span class="sc">$</span>NFx <span class="sc">*</span> dta.swe<span class="sc">$</span>bFx,<span class="at">na.rm =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="one-possible-solution-5" class="slide level2">
 <h2>One possible solution</h2>
@@ -910,42 +939,51 @@ N_0^F (t+5) &amp;= \frac{1}{1+SRB} \, \frac{L^{F}_0}{5 \, \ell_0} \sum_x B_x[t, 
 </section>
 <section id="plotting-results-with-pyramids" class="slide level2">
 <h2>Plotting results with pyramids</h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="do">## useful packages</span></span>
-<span id="cb10-2"><a href=""></a><span class="fu">library</span>(scales)</span>
-<span id="cb10-3"><a href=""></a></span>
-<span id="cb10-4"><a href=""></a><span class="do">## long data</span></span>
-<span id="cb10-5"><a href=""></a>dta.swe.l <span class="ot">&lt;-</span> dta.swe <span class="sc">%&gt;%</span></span>
-<span id="cb10-6"><a href=""></a>    <span class="fu">select</span>(AgeGroup,NFx,NFx5) <span class="sc">%&gt;%</span></span>
-<span id="cb10-7"><a href=""></a>    <span class="fu">rename</span>(<span class="st">'1993'</span><span class="ot">=</span>NFx,<span class="st">'1998'</span><span class="ot">=</span>NFx5) <span class="sc">%&gt;%</span></span>
-<span id="cb10-8"><a href=""></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span>AgeGroup,<span class="at">names_to =</span> <span class="st">"year"</span>,<span class="at">values_to =</span> <span class="st">"population"</span>)</span>
-<span id="cb10-9"><a href=""></a></span>
-<span id="cb10-10"><a href=""></a><span class="do">## plotting</span></span>
-<span id="cb10-11"><a href=""></a><span class="fu">ggplot</span>(dta.swe.l,<span class="fu">aes</span>(<span class="at">x=</span>AgeGroup,<span class="at">y=</span>population,<span class="at">fill=</span>year)) <span class="sc">+</span></span>
-<span id="cb10-12"><a href=""></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>,<span class="at">position =</span> <span class="st">"dodge"</span>,<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
-<span id="cb10-13"><a href=""></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb10-14"><a href=""></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="cb10-15"><a href=""></a>    <span class="fu">ggtitle</span>(<span class="st">"Swedish female population"</span>) <span class="sc">+</span></span>
-<span id="cb10-16"><a href=""></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
-<span id="cb10-17"><a href=""></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"#E69F00"</span>, <span class="st">"#56B4E9"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="do">## useful packages</span></span>
+<span id="cb13-2"><a href=""></a><span class="fu">library</span>(scales)</span>
+<span id="cb13-3"><a href=""></a></span>
+<span id="cb13-4"><a href=""></a><span class="do">## long data</span></span>
+<span id="cb13-5"><a href=""></a>dta.swe.l <span class="ot">&lt;-</span> dta.swe <span class="sc">%&gt;%</span></span>
+<span id="cb13-6"><a href=""></a>    <span class="fu">select</span>(AgeGroup,NFx,NFx5) <span class="sc">%&gt;%</span></span>
+<span id="cb13-7"><a href=""></a>    <span class="fu">rename</span>(<span class="st">'1993'</span><span class="ot">=</span>NFx,<span class="st">'1998'</span><span class="ot">=</span>NFx5) <span class="sc">%&gt;%</span></span>
+<span id="cb13-8"><a href=""></a>    <span class="fu">pivot_longer</span>(<span class="sc">-</span>AgeGroup,<span class="at">names_to =</span> <span class="st">"year"</span>,<span class="at">values_to =</span> <span class="st">"population"</span>)</span>
+<span id="cb13-9"><a href=""></a></span>
+<span id="cb13-10"><a href=""></a><span class="do">## plotting</span></span>
+<span id="cb13-11"><a href=""></a><span class="fu">ggplot</span>(dta.swe.l,<span class="fu">aes</span>(<span class="at">x=</span>AgeGroup,<span class="at">y=</span>population,<span class="at">fill=</span>year)) <span class="sc">+</span></span>
+<span id="cb13-12"><a href=""></a>    <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>,<span class="at">position =</span> <span class="st">"dodge"</span>,<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb13-13"><a href=""></a>    <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb13-14"><a href=""></a>    <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb13-15"><a href=""></a>    <span class="fu">ggtitle</span>(<span class="st">"Swedish female population"</span>) <span class="sc">+</span></span>
+<span id="cb13-16"><a href=""></a>    <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>comma) <span class="sc">+</span></span>
+<span id="cb13-17"><a href=""></a>    <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">"#E69F00"</span>, <span class="st">"#56B4E9"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="plotting-results-with-pyramids-1" class="slide level2">
 <h2>Plotting results with pyramids</h2>
 
-<img data-src="Lecture1_pre-class_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
 <section id="two-sex-closed-population" class="slide level2">
 <h2>Two-sex closed population</h2>
 <div style="font-size: 80%;">
+<!-- ::: incremental -->
 <p>The male population can be projected with the same formulas and using male survivorship ratios</p>
-<p><span class="math display">\[
-\begin{aligned}
+<p><span class="math display">\[\begin{align*}
 s^{M}_{x} = \frac{L^{M}_{x+5}}{L^{M}_x} \quad &amp;; \quad s^{M}_{80} = \frac{T^{M}_{85+}}{T^{M}_{80}} \\
 N^{M}_x(t+5) &amp;= \, N^{M}_{x-5}(t) \, s^{M}_{x-5} \\
 N^{M}_{85+}(t+5) &amp;= \Big( N^{M}_{80}(t) + \, N^{M}_{85+}(t) \Big) \, s^{M}_{80} \\
-b^{M}_x &amp;= \frac{SRB}{1 + SRB} \frac{L^{M}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big) \, \\
+b^{M}_x &amp;= \frac{SRB}{1 + SRB} \frac{L^{M}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big) \, ,\\
 N_0^M (t+5) &amp;= \sum_x N^{F}_x(t) b^{M}_x
-\end{aligned}
-\]</span></p>
+\end{align*}\]</span></p>
+<!-- $$ -->
+<!-- \begin{aligned} -->
+<!-- s^{M}_{x} = \frac{L^{M}_{x+5}}{L^{M}_x} \quad &; \quad s^{M}_{80} = \frac{T^{M}_{85+}}{T^{M}_{80}} \\ -->
+<!-- N^{M}_x(t+5) &= \, N^{M}_{x-5}(t) \, s^{M}_{x-5} \\ -->
+<!-- N^{M}_{85+}(t+5) &= \Big( N^{M}_{80}(t) + \, N^{M}_{85+}(t) \Big) \, s^{M}_{80} \\ -->
+<!-- b^{M}_x &= \frac{SRB}{1 + SRB} \frac{L^{M}_0}{2 \ell_0} \big(F_{x} + s^{F}_x \, F_{x+5}\big) \, \\ -->
+<!-- N_0^M (t+5) &= \sum_x N^{F}_x(t) b^{M}_x  -->
+<!-- \end{aligned} -->
+<!-- $$ -->
 </div>
+<!-- ::: -->
 </section>
 <section id="two-sex-closed-population-exercise" class="slide level2">
 <h2>Two-sex closed population: Exercise</h2>
@@ -975,30 +1013,28 @@ N_0^M (t+5) &amp;= \sum_x N^{F}_x(t) b^{M}_x
 </section>
 <section id="one-possible-solution-6" class="slide level2">
 <h2>One possible solution</h2>
-<!-- ``` r -->
-<!-- ## useful objects -->
-<!-- fact.srb.M <- srb/(1+srb) -->
-<!-- LM0 <- dta.swe$LMx[dta.swe$Age==0] -->
-<!-- ## male projection -->
-<!-- dta.swe <- dta.swe %>% -->
-<!--    mutate(sMx=lead(LMx)/LMx, -->
-<!--    NMx5=lag(NMx*sMx), -->
-<!--            sMx=ifelse(test = Age==80, -->
-<!--                       yes  = lead(LMx)/(LMx + lead(LMx)), -->
-<!--                       no   = sMx), -->
-<!--           NMx5=ifelse(test = Age==85, -->
-<!--                       yes  = (NMx+lag(NMx))*lag(sMx), -->
-<!--                        no   = NMx5), -->
-<!--           bMx=fact.srb.M * LM0 / (2*l0) * (Fx + sFx*lead(Fx)), -->
-<!--           NMx5=ifelse(test = Age == 0, -->
-<!--                       yes  = sum(bMx*NFx,na.rm = T), -->
-<!--                       no   = NMx5)) -->
-<!-- ``` -->
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a><span class="do">## useful objects</span></span>
+<span id="cb14-2"><a href=""></a>fact.srb.M <span class="ot">&lt;-</span> srb<span class="sc">/</span>(<span class="dv">1</span><span class="sc">+</span>srb)</span>
+<span id="cb14-3"><a href=""></a>LM0 <span class="ot">&lt;-</span> dta.swe<span class="sc">$</span>LMx[dta.swe<span class="sc">$</span>Age<span class="sc">==</span><span class="dv">0</span>]</span>
+<span id="cb14-4"><a href=""></a><span class="do">## male projection</span></span>
+<span id="cb14-5"><a href=""></a>dta.swe <span class="ot">&lt;-</span> dta.swe <span class="sc">%&gt;%</span></span>
+<span id="cb14-6"><a href=""></a>    <span class="fu">mutate</span>(<span class="at">sMx=</span><span class="fu">lead</span>(LMx)<span class="sc">/</span>LMx,</span>
+<span id="cb14-7"><a href=""></a>    <span class="at">NMx5=</span><span class="fu">lag</span>(NMx<span class="sc">*</span>sMx),</span>
+<span id="cb14-8"><a href=""></a>           <span class="at">sMx=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age<span class="sc">==</span><span class="dv">80</span>,</span>
+<span id="cb14-9"><a href=""></a>                      <span class="at">yes  =</span> <span class="fu">lead</span>(LMx)<span class="sc">/</span>(LMx <span class="sc">+</span> <span class="fu">lead</span>(LMx)),</span>
+<span id="cb14-10"><a href=""></a>                      <span class="at">no   =</span> sMx),</span>
+<span id="cb14-11"><a href=""></a>           <span class="at">NMx5=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age<span class="sc">==</span><span class="dv">85</span>,</span>
+<span id="cb14-12"><a href=""></a>                       <span class="at">yes  =</span> (NMx<span class="sc">+</span><span class="fu">lag</span>(NMx))<span class="sc">*</span><span class="fu">lag</span>(sMx),</span>
+<span id="cb14-13"><a href=""></a>                       <span class="at">no   =</span> NMx5),</span>
+<span id="cb14-14"><a href=""></a>           <span class="at">bMx=</span>fact.srb.M <span class="sc">*</span> LM0 <span class="sc">/</span> (<span class="dv">2</span><span class="sc">*</span>l0) <span class="sc">*</span> (Fx <span class="sc">+</span> sFx<span class="sc">*</span><span class="fu">lead</span>(Fx)),</span>
+<span id="cb14-15"><a href=""></a>           <span class="at">NMx5=</span><span class="fu">ifelse</span>(<span class="at">test =</span> Age <span class="sc">==</span> <span class="dv">0</span>,</span>
+<span id="cb14-16"><a href=""></a>                       <span class="at">yes  =</span> <span class="fu">sum</span>(bMx<span class="sc">*</span>NFx,<span class="at">na.rm =</span> T),</span>
+<span id="cb14-17"><a href=""></a>                       <span class="at">no   =</span> NMx5))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="one-possible-solution-7" class="slide level2">
 <h2>One possible solution</h2>
 
-<img data-src="Lecture1_pre-class_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="Lecture1_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="some-final-remarks" class="slide level2">
 <h2>Some final remarks</h2>
 <div style="font-size: 80%;">
@@ -1010,7 +1046,12 @@ N_0^M (t+5) &amp;= \sum_x N^{F}_x(t) b^{M}_x
 <li>projected population from one interval becomes the baseline for next projection</li>
 <li>several projections can become cumbersome if done one at a time</li>
 </ul>
+<div style="height: 0.25em;">
+
+</div>
+<div style="text-align: center;">
 <p><span class="math inline">\(\Rightarrow\)</span> matrix algebra can help us to speed this up (tomorrow’s lecture)</p>
+</div>
 </div>
 </section>
 <section id="day-1-assignment" class="slide level2">
@@ -1058,19 +1099,19 @@ N_0^M (t+5) &amp;= \sum_x N^{F}_x(t) b^{M}_x
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="Lecture1_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Lecture1_pre-class_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Lecture1_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
