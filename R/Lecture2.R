@@ -104,3 +104,79 @@ ggplot(dta.swe.l,aes(x=agegroup,y=population,fill=YearF)) +
   ggtitle("Swedish female population") +
   scale_fill_manual(name = "Year", values=c("#E69F00", "#56B4E9","#1C7C54"))
 
+
+### ---- projecting the whole population ----
+
+## create a function for projecting female population
+## in the long term
+pop.proj.fun <- function(age,agegroup,sFx,bFx,NFx,
+                         sMx,bMx,NMx,
+                         n=10){
+  ## dimension of data
+  m <- length(age)
+  m2 <- 2*m
+  ## create an empty Leslie matrix
+  LF <- LM <- BM <- ZEROS <- matrix(0,nrow = m,ncol = m)
+  ## fill up LF
+  LF[1,] <- bFx
+  diag(LF[-1,]) <- sFx
+  LF[m,m] <- sFx[m-1]
+  ## fill up LM and BM
+  BM[1,] <- bMx
+  diag(LM[-1,]) <- sMx
+  LM[m,m] <- sMx[m-1]
+  ## combine pieces to create Leslie matrix
+  LUP <- cbind(LF,ZEROS)
+  LDOWN <- cbind(BM,LM)
+  L <- rbind(LUP,LDOWN)
+  ## create a matrix of population vectors
+  N <- matrix(0,nrow = m2,ncol = n + 1)
+  ## fill first column with the starting population
+  N[,1] <- c(NFx,NMx)
+  ## for loop for the projection
+  i <- 1
+  for (i in 1:n){
+    N[,i+1] <- L%*%N[,i]
+  }
+  ## create output of our function
+  out <- cbind(data.frame(age=rep(age,2),
+                          agegroup=rep(agegroup,2),
+                          sex=rep(c("female","male"),each=m)),N)
+  return(out)
+}
+
+## male objects
+NMx <- df.projection$NMx
+bMx <- df.projection$bMx
+sMx <- df.projection$sMx
+
+## change NAs to 0 for bMx
+bMx[is.na(bMx)] <- 0
+
+## drop last element of sMx
+sMx <- sMx[!is.na(sMx)]
+
+## make the projection for both sexes
+my.proj2 <- pop.proj.fun(age=age,agegroup=agegroup,
+                         sFx=sFx,bFx=bFx,NFx=NFx,
+                         sMx=sMx,bMx=bMx,NMx=NMx,
+                         n=20)
+
+## long data
+dta.swe.l <- my.proj2 %>%
+  pivot_longer(-c(age,agegroup,sex),names_to = "period",values_to = "population") %>%
+  mutate(period=as.numeric(period),
+         Year=1993 + (period-1)*5,
+         YearF=as.factor(Year))
+
+## plotting
+ggplot(dta.swe.l,aes(x=agegroup,y=population,fill=YearF)) +
+  geom_bar(data = subset(dta.swe.l, period %in% c(1,2,21)),
+           stat = "identity",position = "dodge",color = "black") +
+  coord_flip() +
+  theme_bw() +
+  facet_wrap(.~sex)+
+  ggtitle("Swedish female population") +
+  scale_fill_manual(name = "Year", values=c("#E69F00", "#56B4E9","#1C7C54"))
+
+## END
