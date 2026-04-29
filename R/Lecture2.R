@@ -50,7 +50,7 @@ NFx5.matrix <- as.vector(L%*%NFx)
 NFx5.manual <- df.projection$NFx5
 all.equal(NFx5.matrix,NFx5.manual)
 
-plot(x,NFx5.matrix,x,lwd=2)
+plot(x,NFx5.matrix,lwd=2)
 points(x,NFx5.manual,col=4,pch=4,lwd=2)
 
 
@@ -178,5 +178,9 @@ ggplot(dta.swe.l,aes(x=agegroup,y=population,fill=YearF)) +
   facet_wrap(.~sex)+
   ggtitle("Swedish female population") +
   scale_fill_manual(name = "Year", values=c("#E69F00", "#56B4E9","#1C7C54"))
+
+## saving data for lecture 3
+save(df.projection,my.proj1,my.proj2,file = "data/Lecture3.Rdata")
+
 
 ## END
